@@ -1,0 +1,75 @@
+/* step 3: style by html tag */
+body {
+    background-color: #f9f4ed; 
+font-family: 'Poppins', 'Space Mono', sans-serif;    color: #ffcc3f;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* step 5: style with ids */
+#main-header {
+    background-color: #ff9800; /* Orange background */
+    color: white;
+    padding: 20px;
+}
+
+#site-footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+#site-footer a {
+    color: #ffb74d; /* Light orange link color */
+    text-decoration: none;
+}
+
+/* style with classes */
+.content-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.highlight-text {
+    color: #e65100;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ol, ul {
+    text-align: center;
+    list-style-position: inside;
+}
