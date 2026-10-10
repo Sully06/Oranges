@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Health Benefits of Oranges</title>
+    <!-- 1. The Bootstrap link goes here, ABOVE the style.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
     <!-- this is my main title header -->
-    <header>
+    <header id="main-header">
         <h1>The Amazing Health Benefits of Oranges</h1>
     </header>
 
-    <!-- main tag is my primary content container -->
-    <main>
-        <!-- section is a specific and organized block of content -->
-        <section>
-            <!-- my first paragraph -->
-            <p>Oranges are a very sweet and sour refreshing fruit, but they are also healthy for your body vitals and it does other good for your body! Eating them regularly can help keep you healthy and energized.</p>
+    <!-- 2. Added the Bootstrap "container" class to perfectly center my page content -->
+    <main class="container mt-4">
+        
+        <!-- 3. Added a Bootstrap "row" to start the grid system -->
+        <div class="row">
             
-            <!-- src orange image -->
-            <img src="images/orange.jpg" alt="A fresh sliced orange" width="500">
-            
-            <!-- my second paragraph -->
-            <p>One of the best things about oranges is that they are packed with important vitamins and minerals such as potassium. They are an easy snack to pack for anywhere you go.</p>
-        </section>
+            <!-- 4. Added "col-md-6" to make this section take up exactly half the screen on desktop -->
+            <section class="col-md-6">
+                <!-- my first paragraph -->
+                <p>Oranges are a very sweet and sour refreshing fruit, but they are also healthy for your body vitals and it does other good for your body! Eating them regularly can help keep you healthy and energized.</p>
+                
+                <!-- Added "img-fluid" to make sure my image shrinks nicely on small screens -->
+                <img src="images/orange.jpg" alt="A fresh sliced orange" class="img-fluid">
+                
+                <!-- my second paragraph -->
+                <p>One of the best things about oranges is that they are packed with important vitamins and minerals such as potassium. They are an easy snack to pack for anywhere you go.</p>
+            </section>
 
-        <section>
-            <!-- subheading for the list -->
-            <h2>Top Reasons to Eat Oranges</h2>
+            <!-- 5. Added "col-md-6" to make this section take up the other half of the screen -->
+            <section class="col-md-6">
+                <!-- subheading for the list -->
+                <h2>Top Reasons to Eat Oranges</h2>
+                
+                <!-- A list of the benefits -->
+                <ul>
+                    <li>They are highly rich in Vitamin C, which boosts the immune system.</li>
+                    <li>They are a great source of dietary fiber for digestion.</li>
+                    <li>They contain antioxidants that protect your body cells.</li>
+                </ul>
+            </section>
             
-            <!-- A list of the benefits -->
-            <ul>
-                <li>They are highly rich in Vitamin C, which boosts the immune system.</li>
-                <li>They are a great source of dietary fiber for digestion.</li>
-                <li>They contain antioxidants that protect your body cells.</li>
-            </ul>
-        </section>
+        </div> <!-- This closes the row -->
     </main>
 
     <!-- footer has the link to the second page -->
-    <footer>
-        <a href="page2.html">Read more on Page 2: How to Add Oranges to Your Diet</a>
+    <footer id="site-footer">
+        <!-- 6. Added "btn btn-warning" to turn your standard link into a professional-looking orange button -->
+        <a href="page2.html" class="btn btn-warning">Read more on Page 2: How to Add Oranges to Your Diet</a>
     </footer>
 </body>
 </html>

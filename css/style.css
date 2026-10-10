@@ -1,7 +1,8 @@
 /* step 3: style by html tag */
 body {
     background-color: #f9f4ed; 
-font-family: 'Poppins', 'Space Mono', sans-serif;    color: #ffcc3f;
+    font-family: 'Poppins', 'Space Mono', sans-serif;    
+    color: #333333;
 }
 
 h1, h2 {
@@ -29,7 +30,7 @@ p, li {
 }
 
 #site-footer a {
-    color: #ffb74d; /* Light orange link color */
+    color: black; 
     text-decoration: none;
 }
 
@@ -43,13 +44,6 @@ p, li {
 
 .highlight-text {
     color: #e65100;
-}
-
-.flex-container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    justify-content: space-around;
 }
 
 img {
